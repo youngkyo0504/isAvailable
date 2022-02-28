@@ -24,7 +24,7 @@ async function main() {
     const result = await crawling(URL);
     salesPossible.push(result);
   }
-  setOutput('result', salesPossible.join('\n'));
+  setOutput('result', 'keum');
   console.log(salesPossible.join('\n'));
 }
 
