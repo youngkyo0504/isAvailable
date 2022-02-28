@@ -39,9 +39,9 @@ jobs:
       with:
         # Slack channel id, channel name, or user id to post message.
         # See also: https://api.slack.com/methods/chat.postMessage#channels
-        channel-id: 'C034T0V4ARW'
+        channel-id: 'C0345HKUT9A'
         # For posting a simple plain text message
-        slack-message: "테스트"
+        slack-message: "테스트 github"
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
    
