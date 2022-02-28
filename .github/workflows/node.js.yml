@@ -43,5 +43,5 @@ jobs:
         # For posting a simple plain text message
         slack-message: "테스트 github"
       env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
    
