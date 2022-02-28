@@ -1,6 +1,7 @@
 import { JSDOM } from 'jsdom';
 import axios from 'axios';
-
+import github from '@actions/github';
+import core from '@actions/core';
 const URL_LIST = [
   'https://www.jooyonshop.co.kr/goods/goods_view.php?goodsNo=1000000233',
   'https://www.jooyonshop.co.kr/goods/goods_view.php?goodsNo=1000000230',
@@ -23,6 +24,7 @@ async function main() {
     const result = await crawling(URL);
     salesPossible.push(result);
   }
+  core.setOutput('result', salesPossible.join('\n'));
   console.log(salesPossible.join('\n'));
 }
 
