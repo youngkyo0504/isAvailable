@@ -25,6 +25,7 @@ async function main() {
     salesPossible.push(result);
   }
   setOutput('result', salesPossible.join('\n'));
+  console.log('성공기원');
 }
 
 main();
