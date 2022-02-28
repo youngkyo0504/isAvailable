@@ -25,7 +25,6 @@ async function main() {
     salesPossible.push(result);
   }
   setOutput('result', salesPossible.join('\n'));
-  console.log(salesPossible.join('\n'));
 }
 
 main();
