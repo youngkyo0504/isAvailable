@@ -41,7 +41,7 @@ jobs:
         # See also: https://api.slack.com/methods/chat.postMessage#channels
         channel-id: 'C034T0V4ARW'
         # For posting a simple plain text message
-        slack-message: "GitHub build result: 테스트"
+        slack-message: "테스트"
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
    
