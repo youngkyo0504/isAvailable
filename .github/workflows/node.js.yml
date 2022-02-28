@@ -39,7 +39,7 @@ jobs:
       with:
         # Slack channel id, channel name, or user id to post message.
         # See also: https://api.slack.com/methods/chat.postMessage#channels
-        channel-id: '개발'
+        channel-id: 'C034T0V4ARW'
         # For posting a simple plain text message
         slack-message: "GitHub build result: 테스트"
       env:
