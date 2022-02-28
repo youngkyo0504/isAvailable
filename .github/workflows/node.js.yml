@@ -33,4 +33,9 @@ jobs:
       run: node ./dist/main.js
     - name: test
       run: echo "The time was ${{ steps.buy.outputs.result }}"
+    - name: Slack Bot Action
+      uses: krider2010/slack-bot-action@1.0.1
+      secrets: [${{ secrets.SLACK_BOT_TOKEN }}]
+      env: 
+        MESSAGE_STRING: "{ \"channel\": \"개발\", \"text\": \"We've created a new release! Why not check it out at http:\/\/github.com\/awesome\/software\/releases :tada:\" }" 
 
